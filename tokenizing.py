@@ -17,8 +17,8 @@ The weather is great and Python is awesome!
 The sky is pinkish-blue.
 You should not eat cardboard.
 """
-print(sent_tokenize(example_text))
+print(sent_tokenize(example_text)) #Sentence tokenizers
 print("----------------------")
 
-for i in word_tokenize(example_text):
+for i in word_tokenize(example_text): #Word tokenizers
     print(i)
