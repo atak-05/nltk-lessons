@@ -24,7 +24,17 @@ documents = [(list(movie_reviews.words(fileids=fileid)), category)
 
 
 random.shuffle(documents)
-print(documents[0])
+# print(documents[0])
+
+
+"""
+​‌‍‌‍‍⁡⁢⁣⁢nltk.FreqDist()​ ⁡⁢⁢⁢bir sınıftır ve frekans dağılımı hesaplamak için kullanılır.
+Farklı veri türlerindeki elemanların sayısını sayabilir. ⁡
+​‌‍‌⁡⁢⁣⁢
+most_common()⁡​ ⁡⁢⁢⁢yöntemi, sıklıkları büyükten küçüğe doğru sıralar ve en yaygın olanları belirtilen sayıda listeler.⁡ 
+
+"""
+
 
 """
 ⁡⁢⁢⁢document = []
@@ -40,5 +50,10 @@ for w in movie_reviews.words():
 all_words = nltk.FreqDist(all_words)
 # print(all_words.most_common(15))    
 
-print(all_words["stupid"])
+print(all_words["stupid"]) #örneğin burda 253 kez bu kelime geçmiş olduğu sonucu görürüz!!
 
+"""
+⁡⁢⁢⁢Bu kod bloğu, NLTK'in "movie_reviews" corpus'undan tüm kelimeleri alır ve bir frekans dağılımı nesnesine ekler. 
+Bu nesne, her kelimenin kaç kez geçtiğini sayar.
+Daha sonra, en sık kullanılan 15 kelimeyi yazdırmak için "most_common()" yöntemi kullanılır.⁡
+"""
