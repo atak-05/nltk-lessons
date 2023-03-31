@@ -56,6 +56,17 @@ testing_set = featuresets[1900:]
 
 # classifier = nltk.NaiveBayesClassifier.train(training_set)
 
+
+"""
+​‌‍⁡⁢⁢⁢‌naivebayes.pickle ​dosyasını okuyor ve içindeki eğitilmiş sınıflandırıcıyı classifier değişkenine yüklüyor. 
+Ardından, bu sınıflandırıcıyı test veri seti (testing_set) üzerinde değerlendiriyor ve doğruluk oranını ekrana yazdırıyor.
+Son olarak, sınıflandırıcının en bilgilendirici özelliklerini ekrana yazdırıyor.
+
+Bu kod, daha önce eğitilmiş bir sınıflandırıcının yüklenmesini gösteriyor. 
+Bu şekilde, sınıflandırıcıyı yeniden eğitmeden önce kaydedilen eğitilmiş bir modele erişebilirsiniz.
+pickle modülü, Python nesnelerini serileştirmek ve deserialize etmek için kullanılır.
+Bu örnekte, pickle kullanılarak eğitilmiş sınıflandırıcı bir dosyaya kaydedilmiş ve daha sonra bu dosyadan tekrar yüklenebilmiştir.⁡
+"""
 classifier_f =open("naivebayes.pickle","rb")
 classifier = pickle.load(classifier_f)
 classifier_f.close()
