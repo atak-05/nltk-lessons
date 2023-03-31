@@ -1,0 +1,9 @@
+
+python
+nltk
+nltk.dowload() ⁡⁢⁢⁢//dowload for nltk datas⁡⁡
+matplotlib
+scipy
+
+numpy
+scikit-learn
