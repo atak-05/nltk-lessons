@@ -193,10 +193,9 @@ print ("LinearSVC_classifier accuracy percent :  ",(nltk.classify.accuracy(Linea
 
 """   ⁡⁢⁢⁢********************************** ​‌‍‌Voted Classifier​ *****************************⁡ """
 
-voted_classifier = VoteClassifier(classifier,
+voted_classifier = VoteClassifier(
                                   LinearSVC_classifier,
                                   NuSVC_classifier,
-                                  SGDClassifier_classifier,
                                   LogisticRegression_classifier,
                                   BernoulliNB_classifier)
 
